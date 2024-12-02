@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    background-color: white;
+    color: rgb(156, 156, 54);
+    height: 80px;
+    font-size: 40px;
+   padding: 10px 10px;
+}
+
+/* versione tablet */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+
+    header{
+        height: 60px;
+    }
+    .logo{
+        font-size: 30px;
+    }
+}
+
+
+/* versione mobile */
+
+@media screen and (max-width: 767px) {
+    .logo{
+        text-align: center;
+        font-size: 60px;
+    }
+}
+
+/* main */
+main{
+    background-color: lightgray;
+}
+
+.container{
+    width: 80%;
+    margin: 10px auto;
+}
+
+.pgray{
+    color: gray;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+h1{
+    font-size: 30px;
+    color: blueviolet;
+    padding-bottom: 20px;
+}
+
+/* main content 1 */
+.cont1{
+    display: flex;
+}
+
+.img1{
+    width: 60%;
+}
+
+.img1 img{
+    max-width: 100%;
+}
+
+.continfo1{
+    width: 40%;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: white;
+}
+
+.pinfo{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.info1 ul{
+    list-style: none;
+}
+.info1 ul li{
+    margin-bottom: 10px;
+}
+
+/* social */
+.social li{
+    list-style: none;
+    margin: 20px 0;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+}
+
+.anone{
+    text-decoration: none;
+    color: black;
+}
+
+.button {
+    background-color: white;
+    border-radius: 9999px;
+    padding: 5px 10px;
+}
+
+
+/* versione tablet */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+   
+    .cont1{
+        display: block;
+    }
+    .info1 ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .info1 ul li{
+        width: 30%;
+        margin-bottom: 20px;
+    }
+    .img1, .continfo1{
+        width: 100%;
+    }
+    .extext2{
+        display: none;
+    }
+
+    .social{
+        width: 100%;
+    }
+
+    .button{
+        padding: 5px 40px;
+    }
+
+}
+
+
+
+
+/* versione mobile */
+@media screen and (max-width: 767px) {
+    .extext{
+        display: none;
+    }
+    
+    .cont1{
+        display: block;
+    }
+    /* .info1 ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .info1 ul li{
+        width: 30%;
+        margin-bottom: 20px;
+    } */
+    .img1, .continfo1{
+        width: 100%;
+    }
+    .extext2{
+        display: none;
+        border-radius: 50%;
+    }
+}
