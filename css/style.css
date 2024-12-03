@@ -138,7 +138,7 @@ h2{
     margin-top: 20px;
 }
 
-.clearfix{
+.clearfix::after {
     display: table;
     content: "";
     clear: both;
